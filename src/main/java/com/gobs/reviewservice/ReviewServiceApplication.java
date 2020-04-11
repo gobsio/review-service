@@ -1,4 +1,4 @@
-package com.gobs.review_service;
+package com.gobs.reviewservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
