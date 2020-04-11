@@ -17,7 +17,7 @@ import org.springframework.security.oauth2.provider.token.ResourceServerTokenSer
 
 @Configuration // @formatter:off
 @EnableOAuth2Client
-public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Value("${oauth2-config.server-url}")
     private String OAUTH2_SERVER_URL;
