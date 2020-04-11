@@ -19,7 +19,7 @@ public class GetReviewRequestArguments extends DefaultRequestArguments {
 
     @Getter
     @Setter
-    @NotBlank // argument is required
+    // @NotBlank // argument is required
     private String reviewedId;
 
 }

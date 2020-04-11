@@ -19,10 +19,30 @@ public class DefaultRequestArguments implements Serializable {
 
     @Getter
     @Setter
-    private Integer pageIndex;
+    private Integer pageIndex = 0;
 
     @Getter
     @Setter
-    private Integer pageSize;
+    private Integer pageSize = 10;
+
+    public DefaultRequestArguments defaultPageSize(Integer pageSize) {
+        this.pageSize = (this.pageSize == null) ? pageSize : this.pageSize; 
+        return this;
+    }
+
+    public DefaultRequestArguments defaultPageIndex(Integer pageIndex) {
+        this.pageIndex = (this.pageIndex == null) ? pageIndex : this.pageIndex; 
+        return this;
+    }
+
+    public DefaultRequestArguments defaultSortBy(String sortBy) {
+        this.sortBy = (this.sortBy == null) ? sortBy : this.sortBy; 
+        return this;
+    }
+
+    public DefaultRequestArguments defaultSortOrder(String sortOrder) {
+        this.sortOrder = (this.sortOrder == null) ? sortOrder : this.sortOrder; 
+        return this;
+    }
 
 }
