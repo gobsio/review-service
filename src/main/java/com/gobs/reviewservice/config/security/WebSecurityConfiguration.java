@@ -44,10 +44,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         String[] _protected = PROTECTED_REQUESTS.toArray(new String[] {});
 
         http
-            .csrf().disable()
             .authorizeRequests()
-                .antMatchers(_allowed).permitAll()
-                    .anyRequest().permitAll();
+                .antMatchers(_allowed).permitAll();
 
         http
             .csrf().disable()
